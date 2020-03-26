@@ -62,6 +62,10 @@ def naming_system
   kng[:sub_category] = phy  
   
   ###Lots of repeating myself here. 
+  # taxa = %w[Kingdom Phylum Class Order Family Genus Species]
+  #
+  
+  
   
   return kng
 end
