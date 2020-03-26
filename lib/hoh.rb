@@ -60,7 +60,8 @@ def naming_system
   cla[:sub_category] = ord
   phy[:sub_category] = cla
   kng[:sub_category] = phy  
-  
+  return kng
+end 
   ###Lots of repeating myself here. 
   # taxa = %w[Kingdom Phylum Class Order Family Genus Species] #taxa is an array of the strings 
   #taxa2 = []
