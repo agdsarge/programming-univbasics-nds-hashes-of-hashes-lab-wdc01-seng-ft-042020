@@ -73,7 +73,7 @@ def name_system2
     taxa2[1][:sub_category] = taxa2.shift
   end
   return taxa2[0]
-end #14 lines. much logic. very fun.
+end #14 lines. much logic. very fun. could shorten with pop. or change the array taxa
 
 puts naming_system
 puts name_system2
