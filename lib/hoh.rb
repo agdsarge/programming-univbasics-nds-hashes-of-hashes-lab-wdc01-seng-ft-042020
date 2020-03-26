@@ -67,6 +67,7 @@ def name_system2
      taxa2.push({label: taxa[array_index], sub_category: {}})
      array_index += 1
   end
+  taxa2[-1][:sub_category] = nil
   
   return taxa2
 end
