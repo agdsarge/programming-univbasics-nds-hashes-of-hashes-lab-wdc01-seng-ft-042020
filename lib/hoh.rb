@@ -56,7 +56,7 @@ def naming_system
   cla[:sub_category] = ord
   phy[:sub_category] = cla
   kng[:sub_category] = phy  
-  return kng
+  return kng #15 lines
 end 
 
 def name_system2
@@ -70,11 +70,11 @@ def name_system2
   taxa2[-1][:sub_category] = nil
   taxa2.reverse! #now [species, genus, . . . kingdom]
   while taxa2.length > 1 #want to start nesting
-    taxa2[1][:sub_category] = taxa2[0]
-    taxa2.shift
+    taxa2[1][:sub_category] = taxa2.shift
+
   end
   return taxa2[0]
-end
+end #15 lines
 
 puts naming_system
 puts name_system2
