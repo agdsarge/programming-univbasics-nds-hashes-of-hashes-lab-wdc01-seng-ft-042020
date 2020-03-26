@@ -63,14 +63,12 @@ def naming_system
   
   ###Lots of repeating myself here. 
   # taxa = %w[Kingdom Phylum Class Order Family Genus Species] #taxa is an array of the strings 
-  # 
-  #
-  #
-  # linnaeus = {label: "", sub_category: {}}
+  #taxa2 = []
   # array_index = 0
   # while array_index < taxa.length do
-  #   linnaeus[:label] = taxa[array_index]
-  #   
+  #   taxa2.push({label: taxa[array_index], sub_category: {}})
+  #   array_index += 1
+  # end
   
   
   #   array_index
