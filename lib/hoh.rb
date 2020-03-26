@@ -72,4 +72,4 @@ def name_system2
 end
 
 #puts naming_system
-puts name_system2.class
+puts name_system2
