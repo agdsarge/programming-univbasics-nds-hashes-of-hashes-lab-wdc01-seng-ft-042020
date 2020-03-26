@@ -58,18 +58,17 @@ def naming_system
   kng[:sub_category] = phy  
   return kng
 end 
-  ###Lots of repeating myself here. 
-  # taxa = %w[Kingdom Phylum Class Order Family Genus Species] #taxa is an array of the strings 
-  #taxa2 = []
-  # array_index = 0
-  # while array_index < taxa.length do
-  #   taxa2.push({label: taxa[array_index], sub_category: {}})
-  #   array_index += 1
-  # end
-  
-  
-  #   array_index
-  # end     
 
+def name_system2
+  taxa = %w[Kingdom Phylum Class Order Family Genus Species] #taxa is an array of the strings 
+  taxa2 = []
+  array_index = 0
+  while array_index < taxa.length do
+     taxa2.push({label: taxa[array_index], sub_category: {}})
+     array_index += 1
+  end
+  
+  return taxa2
 
 puts naming_system
+puts name_system2
