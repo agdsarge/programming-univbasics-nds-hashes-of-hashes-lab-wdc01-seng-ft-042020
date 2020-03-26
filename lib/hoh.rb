@@ -30,6 +30,14 @@
 #   sub_category: nil
 # }
 
+kng = {label: "Kingdom", sub_category: {}}
+phy = {label: "Phylum", sub_category: {}}
+cla = {label: "Class", sub_category: {}}
+ord = {label: "Order", sub_category: {}}
+fam = {label: "Family", sub_category: {}}
+gen = {label: "Genus", sub_category: {}}
+spe = {label: "Species", sub_category: nil}
+
 def naming_system
   # Remember:
   #  Kingdom
@@ -41,5 +49,12 @@ def naming_system
   #  Species
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
-  return {}
+  gen[:sub_category] = spe
+  fam[:sub_category] = gen
+  ord[:sub_category] = fam
+  cla[:sub_category] = ord
+  phy[:sub_category] = cla
+  kng[:sub_category] = phy  
+  
+  return kng
 end
