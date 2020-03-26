@@ -73,9 +73,6 @@ def naming_system
   
   #   array_index
   # end     
-  
-  
-  return kng
-end
+
 
 puts naming_system
