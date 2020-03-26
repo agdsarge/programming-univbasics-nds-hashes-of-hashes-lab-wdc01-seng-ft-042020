@@ -65,4 +65,3 @@ def naming_system
 end
 
 naming_system
-puts kng
