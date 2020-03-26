@@ -71,5 +71,5 @@ def name_system2
   return taxa2
 end
 
-puts naming_system
+#puts naming_system
 puts name_system2
