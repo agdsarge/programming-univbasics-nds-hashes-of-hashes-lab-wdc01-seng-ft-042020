@@ -60,7 +60,7 @@ def naming_system
 end 
 
 def name_system2
-  taxa = %w[Kingdom Phylum Class Order Family Genus Species] #taxa is an array of the strings 
+  taxa = %w[Kingdom Phylum Class Order Family Genus Species] 
   taxa2 = []
   array_index = 0
   while array_index < taxa.length do
@@ -71,10 +71,9 @@ def name_system2
   taxa2.reverse! #now [species, genus, . . . kingdom]
   while taxa2.length > 1 #want to start nesting
     taxa2[1][:sub_category] = taxa2.shift
-
   end
   return taxa2[0]
-end #15 lines
+end #14 lines. much logic. very fun.
 
 puts naming_system
 puts name_system2
