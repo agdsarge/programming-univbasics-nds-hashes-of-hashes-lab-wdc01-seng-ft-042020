@@ -64,4 +64,4 @@ def naming_system
   return kng
 end
 
-naming_system
+puts naming_system
