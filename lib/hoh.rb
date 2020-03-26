@@ -63,7 +63,8 @@ def naming_system
   
   ###Lots of repeating myself here. 
   # taxa = %w[Kingdom Phylum Class Order Family Genus Species]
-  #
+  # taxa.reverse!
+  # for 
   
   
   
