@@ -61,6 +61,8 @@ def naming_system
   phy[:sub_category] = cla
   kng[:sub_category] = phy  
   
+  ###Lots of repeating myself here. 
+  
   return kng
 end
 
