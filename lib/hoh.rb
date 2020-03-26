@@ -69,11 +69,11 @@ def name_system2
   end
   taxa2[-1][:sub_category] = nil
   taxa2.reverse! #now [species, genus, . . . kingdom]
-  #while taxa2.length > 1 #want to start nesting
+  while taxa2.length > 1 #want to start nesting
     taxa2[1][:sub_category] = taxa2[0]
-    
-  #end
-  return taxa2
+    taxa2.shift
+  end
+  return taxa2[0]
 end
 
 #puts naming_system
